@@ -1,0 +1,133 @@
+/* ini css */
+.logo-icon {
+    height: 48px;
+    width: 48px;
+    background-image: url(https://picsum.photos/100);
+    background-size: cover;
+    border-radius: 50%;
+}
+
+.nav-container {
+    display: flex;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-item {
+    color: black;
+    font-size: 16px;
+    font-weight: bold;
+    border-width: 1px;
+    border-style: solid;
+    border-color: initial;
+    border-image: initial;
+    text-decoration: none;
+    padding: 8px;
+    border-radius: 8px;
+}
+
+.banner-img {
+    height: 300px;
+    background-image: url(https://picsum.photos/1000);
+    background-size: cover;
+    padding-bottom: 500px;
+    background-position: center center;
+}
+
+.profile-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.profile-img {
+    height: 200px;
+    background-image: url(https://picsum.photos/2000);
+    background-size: cover;
+    width: 200px;
+    background-position: center center;
+    border-radius: 200px;
+
+}
+
+.profile-item {
+    height: 300px;
+    text-align: -webkit-center;
+}
+
+.message-header {
+    margin-left: 100pt;
+}
+
+.message-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.container-form {
+    margin-left: 100pt;
+}
+
+.col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+}
+
+.col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+}
+
+label {
+    display: inline-block;
+    width: 400px;
+    padding: 12px 12px 12px 0px;
+}
+
+input[type="text"], select, textarea {
+    width: 100%;
+    box-sizing: border-box;
+    resize: vertical;
+    padding: 12px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(204, 204, 204);
+    border-image: initial;
+    border-radius: 4px;
+}
+
+.row::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+input[type="submit"] {
+    background-color: rgb(4, 170, 109);
+    color: white;
+    cursor: pointer;
+    float: right;
+    width: 500px;
+    margin-top: 5pt;
+    padding: 12px 20px;
+    border-width: initial;
+    border-style: none;
+    border-color: initial;
+    border-image: initial;
+    border-radius: 4px;
+}
+
+.hasil-login {
+    margin-right: 100pt;
+    width: 500px
+}
+
+.message-container {
+    display: flex;
+    justify-content: space-between;
+}

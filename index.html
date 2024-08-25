@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css\style.css">
+</head>
+
+<body>
+    <nav>
+        <header>
+            <div class="logo-icon"></div>
+        </header>
+
+        <section class="nav-container">
+            <a href="#" class="nav-item">Home</a>
+            <a href="#our-profile" class="nav-item">Our Profile</a>
+            <a href="#" class="nav-item">Achievement</a>
+            <a href="#" class="nav-item">Message Us</a>
+        </section>
+
+    </nav>
+
+    <hr />
+
+    <main>
+        <article>
+            <header>
+                <h1>welcome user, to our website</h1>
+            </header>
+
+            <p>lorem ipsum dolor asuieee</p>
+
+            <div class="banner-img"></div>
+        </article>
+
+        <hr />
+
+        <section id="our-profile">
+            <header>
+                <h1>Our Profile</h1>
+            </header>
+
+            <section class="profile-container">
+                <div class="profile-item">
+                    <div class="profile-img"></div>
+                    <h2>sofware engineer</h2>
+                </div>
+                <div class="profile-item">
+                    <div class="profile-img"></div>
+                    <h2>sofware engineer</h2>
+                </div>
+                <div class="profile-item">
+                    <div class="profile-img"></div>
+                    <h2>sofware engineer</h2>
+                </div>
+            </section>
+        </section>
+        <hr />
+
+        <section class="message-us">
+            <header>
+                <h1 class="message-header">Message Us</h1>
+            </header>
+            <article class="message-container">
+                <div class="container-form">
+                    <form action="action_page.php">
+                      <div class="row">
+                        <div class="col-25">
+                          <label for="name">Nama :</label>
+                        </div>
+                        <div class="col-75">
+                          <input type="text" id="name" name="nama" placeholder="Masukkan Namamu...">
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-25">
+                          <label for="tgl">Tanggal Lahir</label>
+                        </div>
+                        <div class="col-75">
+                          <input type="text" id="date" name="tgl" placeholder="Your last name..">
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-25">
+                          <label for="country">Jenis Kelamin</label>
+                        </div>
+                        <div class="col-75">
+                          <select id="country" name="country">
+                            <option value="australia">Australia</option>
+                            <option value="canada">Canada</option>
+                            <option value="usa">USA</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-25">
+                          <label for="pesan">Pesan</label>
+                        </div>
+                        <div class="col-75">
+                          <textarea class="text-pesan" name="message" placeholder="Write something.." style="height:200px"></textarea>
+                        </div>
+                      </div>
+                      <div class="row-submit">
+                        <input type="submit" value="Submit">
+                      </div>
+                    </form>
+                  </div>
+                <div class="hasil-login">
+                    <textarea id="pesan" name="message" placeholder="Write something.." style="height:200px"></textarea>
+                </div>
+            </article>    
+        </section>
+
+    </main>
+    <hr />
+    <footer>
+        <p>by arif</p>
+    </footer>
+</body>
+
+</html>
