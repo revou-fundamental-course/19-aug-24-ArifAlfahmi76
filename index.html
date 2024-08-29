@@ -3,12 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="css\style.css">
+    <title>Mini Project</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-    <nav>
+  <!-- navbar -->
+    <nav class="header-wrapper">
+        <button class="menu-toggle">☰</button>
         <header>
             <div class="logo-icon"></div>
         </header>
@@ -22,81 +24,102 @@
 
     </nav>
 
-    <hr />
-
+<!-- banner-auto-scroll -->
     <main>
         <article>
             <header>
-                <h1>welcome user, to our website</h1>
+                <h1>welcome <span id="name">Arif</span> to our website</h1>
             </header>
-
+            <button id="changeButton">Change Name</button>
             <p>lorem ipsum dolor asuieee</p>
 
-            <div class="banner-img"></div>
+            <div class="banner-container">
+              <div class="slide-img"><img src="asset/gbr1.png" alt="banner-img"></div>
+              <div class="slide-img"><img src="asset/gbr2.jpg" alt="banner-img"></div>
+              <div class="slide-img"><img src="asset/gbr3.jpg" alt="banner-img"></div>
+              <a class="prev" onclick="plusDivs(-1)">&#10094;</a>
+              <a class="next" onclick="plusDivs(1)">&#10095;</a>
+          </div>
         </article>
-
         <hr />
 
+<!-- our-profile -->
         <section id="our-profile">
-            <header>
+            <header class="head-profile">
                 <h1>Our Profile</h1>
             </header>
 
             <section class="profile-container">
                 <div class="profile-item">
-                    <div class="profile-img"></div>
+                    <div class="profile-img1"></div>
                     <h2>sofware engineer</h2>
                 </div>
                 <div class="profile-item">
-                    <div class="profile-img"></div>
+                    <div class="profile-img2"></div>
+                    <h2>sofware engineer</h2>
+                </div>
+                <!-- <div class="profile-item">
+                    <div class="profile-img3"></div>
+                    <h2>sofware engineer</h2>
+                </div> -->
+            </section>
+            <section class="profile-container">
+                <div class="profile-item">
+                    <div class="profile-img4"></div>
                     <h2>sofware engineer</h2>
                 </div>
                 <div class="profile-item">
-                    <div class="profile-img"></div>
+                    <div class="profile-img5"></div>
                     <h2>sofware engineer</h2>
                 </div>
+                <!-- <div class="profile-item">
+                    <div class="profile-img6"></div>
+                    <h2>sofware engineer</h2>
+                </div> -->
             </section>
         </section>
         <hr />
 
+<!-- message-us -->
         <section class="message-us">
             <header>
                 <h1 class="message-header">Message Us</h1>
             </header>
             <article class="message-container">
                 <div class="container-form">
-                    <form action="action_page.php">
+                    <form name="message-form" onsubmit="return validationForm()"  >
                       <div class="row">
                         <div class="col-25">
-                          <label for="name">Nama :</label>
+                          <label for="name">Nama<span class="titik-dua">:</span></label>
                         </div>
                         <div class="col-75">
-                          <input type="text" id="name" name="nama" placeholder="Masukkan Namamu...">
+                          <input type="text" id="nama" name="full-name" placeholder="Masukkan Namamu..." required>
                         </div>
                       </div>
                       <div class="row">
                         <div class="col-25">
-                          <label for="tgl">Tanggal Lahir</label>
+                          <label for="date">Tanggal Lahir<span class="titik-dua">:</span></label>
                         </div>
                         <div class="col-75">
-                          <input type="text" id="date" name="tgl" placeholder="Your last name..">
+                          <input type="date" id="date" name="date">
                         </div>
                       </div>
                       <div class="row">
                         <div class="col-25">
-                          <label for="country">Jenis Kelamin</label>
+                          <label for="gender">Jenis Kelamin<span class="titik-dua">:</span></label>
                         </div>
-                        <div class="col-75">
-                          <select id="country" name="country">
-                            <option value="australia">Australia</option>
-                            <option value="canada">Canada</option>
-                            <option value="usa">USA</option>
-                          </select>
-                        </div>
+                          <div class="jeniskelamin-container">
+                            <div class="col-35">
+                              <input type="radio" id="male" name="gender"><label for="male" value="male">Pria</label>
+                            </div>
+                            <div class="col-35">
+                                <input type="radio" id="female" name="gender"><label for="female" value="female">Wanita</label>
+                            </div>
+                          </div>
                       </div>
                       <div class="row">
                         <div class="col-25">
-                          <label for="pesan">Pesan</label>
+                          <label for="pesan">Pesan <span class="titik-dua">:</span></label>
                         </div>
                         <div class="col-75">
                           <textarea class="text-pesan" name="message" placeholder="Write something.." style="height:200px"></textarea>
@@ -108,16 +131,25 @@
                     </form>
                   </div>
                 <div class="hasil-login">
-                    <textarea id="pesan" name="message" placeholder="Write something.." style="height:200px"></textarea>
+                    <h2>Hasil Submit</h2>
+                    <div>
+                      <p>Nama: <span id="sender-full-name"></span></p>
+                      <p>Tanggal Lahir: <span id="sender-date"></span></p>
+                      <p>Jenis Kelamin: <span id="sender-gender"></span></p>
+                      <p>Pesan: <span id="sender-message"></span></p>
+                    </div>
                 </div>
             </article>    
         </section>
 
     </main>
     <hr />
+
+  <!-- footer -->
     <footer>
-        <p>by arif</p>
+        <span><p>Create by arif</p></span>
     </footer>
+    <script src="js/script.js"></script>
 </body>
 
-</html>
+</html> 
